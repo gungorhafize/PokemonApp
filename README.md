@@ -16,28 +16,6 @@
 <p>Pokemon uses the <a href="https://pokeapi.co/">PokeApi</a> to get information from the server. The PokeApi has a lot of details about the main Pokémon games and offers them through a RESTful API. game series.</p>
 <br>
 
-<!-- Tech Stack-->
-<h2>Tech Stack🚀 </h2>
-<ul>
-<li>Minumum SDK Level: 21</li>
-<li>Target SDK Level: 34</li>
-<li>100% Kotlin</li>
-<li>Architecture
-    <ul>
-      <li><a href="https://developer.android.com/topic/architecture">MVVM Pattern</a>: Industry-recognized software architecure pattern supported by Google</li>
-    </ul>
- </li>
-<li><a href="https://developer.android.com/jetpack/compose/documentation">Jetpack Compose</a>:Using a declarative programming model, modern toolkit for building Android user interfaces.</li>
-<li><a href="https://developer.android.com/kotlin/coroutines">Coroutines</a>: Concurrency design patterns offered by Kotlin</li>
-<li><a href="https://developer.android.com/jetpack/compose/state">ViewModel</a>: As a state holder, it exposes data streams.</li>
-<li><a href="https://github.com/coil-kt/coil/">Coil</a> : A lightweight image loading library for Android backed by Kotlin Coroutines. </li>
-<li><a href="https://developer.android.com/training/dependency-injection/hilt-android">Hilt</a>: A dependency injection library built on top of Dagger gains advantages such as compile-time correctness, runtime performance, scalability, and support within Android Studio. </li>
-<li><a href="https://square.github.io/retrofit/">Retrofit</a>: A REST client for Android, Java, and Kotlin, developed by Square, known for its type-safe nature</li>
-<li><a href="https://square.github.io/okhttp/"[>OkHttp</a> : A third-party library built on top of the Okio library, used for sending and receiving HTTP-based network requests</li>
-<li><a href="https://github.com/JakeWharton/timber/">Timber</a> : Logging utility library commonly used in Android development for logging messages and debugging information</li>
-</ul>
-<br>
-
 <!-- Architecture -->
 <h2>Architecture🏗️ </h2>
 <p>Pokemon App uses the MVVM architecture to separate UI and Data components, ensuring a clear separation of concerns, driving the UI from data models, maintaining a single source of truth, and enforcing unidirectional data flow for a more maintainable and testable Android app.</p>
@@ -71,5 +49,28 @@
   <li>PokemonRepository uses the Retrofit library to send requests to the PokeAPI server and retrieve network responses.</li>
 </ul>
 <br>
+
+<!-- Tech Stack-->
+<h2>Tech Stack🚀 </h2>
+<ul>
+<li>Minumum SDK Level: 21</li>
+<li>Target SDK Level: 34</li>
+<li>100% Kotlin</li>
+<li>Architecture
+    <ul>
+      <li><a href="https://developer.android.com/topic/architecture">MVVM Pattern</a>: Industry-recognized software architecure pattern supported by Google</li>
+    </ul>
+ </li>
+<li><a href="https://developer.android.com/jetpack/compose/documentation">Jetpack Compose</a>:Using a declarative programming model, modern toolkit for building Android user interfaces.</li>
+<li><a href="https://developer.android.com/kotlin/coroutines">Coroutines</a>: Concurrency design patterns offered by Kotlin</li>
+<li><a href="https://developer.android.com/jetpack/compose/state">ViewModel</a>: As a state holder, it exposes data streams.</li>
+<li><a href="https://github.com/coil-kt/coil/">Coil</a> : A lightweight image loading library for Android backed by Kotlin Coroutines. </li>
+<li><a href="https://developer.android.com/training/dependency-injection/hilt-android">Hilt</a>: A dependency injection library built on top of Dagger gains advantages such as compile-time correctness, runtime performance, scalability, and support within Android Studio. </li>
+<li><a href="https://square.github.io/retrofit/">Retrofit</a>: A REST client for Android, Java, and Kotlin, developed by Square, known for its type-safe nature</li>
+<li><a href="https://square.github.io/okhttp/"[>OkHttp</a> : A third-party library built on top of the Okio library, used for sending and receiving HTTP-based network requests</li>
+<li><a href="https://github.com/JakeWharton/timber/">Timber</a> : Logging utility library commonly used in Android development for logging messages and debugging information</li>
+</ul>
+<br>
+
 
 
