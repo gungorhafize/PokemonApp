@@ -1,7 +1,9 @@
 package com.hafize.pokemonapp.data.remote
 
+import com.example.pokemon.data.remote.responses.Pokemon
 import com.example.pokemon.data.remote.responses.PokemonList
 import retrofit2.http.GET
+import retrofit2.http.Path
 import retrofit2.http.Query
 
 // Define an interface for making HTTP requests to the PokeAPI.
@@ -17,4 +19,9 @@ interface PokeApi {
 
         @Query("offset") offset: Int
     ): PokemonList
+
+    @GET("pokemon/{name}")
+    suspend fun getPokemonDetail(
+        @Path("name") name: String
+    ): Pokemon
 }

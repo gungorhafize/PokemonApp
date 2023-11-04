@@ -1,5 +1,6 @@
 package com.hafize.pokemonapp.data.repository
 
+import com.example.pokemon.data.remote.responses.Pokemon
 import com.example.pokemon.data.remote.responses.PokemonList
 import com.hafize.pokemonapp.data.remote.PokeApi
 import com.hafize.pokemonapp.util.Resource
@@ -18,6 +19,15 @@ class PokemonRepositoryImpl @Inject constructor(
         } catch (e : Exception){
             return Resource.Error("Unknown error occurred")
 
+        }
+        return Resource.Success(response)
+    }
+
+    override suspend fun getPokemonDetail(name: String): Resource<Pokemon> {
+        val response = try {
+            api.getPokemonDetail(name)
+        } catch (e: Exception) {
+            return Resource.Error("Unknown error occurred")
         }
         return Resource.Success(response)
     }
